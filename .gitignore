@@ -1,5 +1,6 @@
-# Object file
-*.o
+# Adobe Files
+*.psd
+*.ai
 
-# Ada Library Information
-*.ali
+# Mac Generated
+*.DS_Store
