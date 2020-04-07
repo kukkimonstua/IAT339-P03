@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:200,300,400,600,700,800');
 
 /* imports font family from googleapis, websafe. must be first */
 body {
-  font-family: 'Raleway', Verdana, Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", Verdana, Helvetica, Arial, sans-serif;
   padding: 7em;
   max-width: 80em;
   margin: auto;
@@ -13,22 +13,12 @@ body {
   background-size: cover;
 }
 
-#pagetop {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  /* max-width: 100%; */
-  /* align-items: baseline; */
-  /* text-align: center; */
-  margin-top: -2em;
-  margin-bottom: 1em;
-  border-bottom: solid 1px #dedddc;
-  padding-bottom: 10px;
-  padding-top: 2em;
-}
-
-#pagetop img {
-  width: 25em;
+p {
+  font-size: 1em;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 20px;
 }
 
 header h5 {
@@ -42,17 +32,18 @@ h1 {
 }
 
 h2 {
-  /* https://www.w3schools.com/css/css_inline-block.asp
-  https://css-tricks.com/fighting-the-space-between-inline-block-elements/ */
-  margin-top: 1rem;
-  background-color: rgb(164, 245, 238, 0.4);
-  border-radius: 10px;
-  padding: 0.5em;
+  font-size: 2em;
+  font-weight: 400;
+  color: #414141;
 }
 
 h3 {
-  font-style: italic;
   margin-top: 1rem;
+  border-radius: 10px;
+  padding: 0.2em;
+  font-size: 2rem;
+  font-weight: 400;
+  color: #414141;
 }
 
 h4 {
@@ -76,45 +67,40 @@ img {
   max-width: 80em;
 }
 
-/* https://codepen.io/manabox/pen/raQmpL -------*/
-.cusInput input[type="radio"] {
-  /* Removes default radio Input*/
-  display: none;
-}
-
 /* Text box input field */
 /* https://www.w3schools.com/css/css_form.asp*/
-input[type=text] {
-  width: auto;
-  margin-bottom: 20px;
-  padding: 12px;
+input[type=text], select, textarea {
+  display: block;
+  width: 100%;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  padding: 5px;
   border: 3px solid #ccc;
-  border-radius: 3px;
+  border-radius: 4px;
+  box-sizing: border-box;
   outline: none;
-}
-
-input[type=text]:hover {
-  background: rgb(240, 135, 94, 0.1);
-}
-
-[type=text]:focus {
-  border: 3px solid #AB9993;
+  resize: vertical;
+  overflow: scroll;
 }
 
 textarea {
-  width: 100%;
-  margin-bottom: 20px;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 3px;
+  height: 10em;
+  resize: vertical;
+  overflow: scroll;
 }
 
-textarea:hover {
-  background: rgb(240, 135, 94, 0.1);
+#contactform-container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
 }
 
-textarea:focus {
-  border: 3px solid #AB9993;
+input[type=text]:hover {
+  background: rgb(255, 167, 138, 0.1);
+}
+
+[type=text]:focus {
+  border: 3px solid rgb(219, 147, 123);
 }
 
 input[type=search] {
@@ -150,13 +136,31 @@ input[type=search] {
   margin: auto;
 }
 
+.center img {
+  max-width: 15em;
+}
+
+.center {
+  display: block;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.center p {
+  text-align: center;
+}
+
 .styleguide img {
   max-width: 15em;
 }
 
 .button, [type=submit] {
   display: inline-block;
-  padding: 0.4rem;
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
+  width: 100%;
+  font-size: 0.9em;
   color: white;
   border-radius: 4px;
   background-color: rgb(48, 179, 169);
@@ -179,10 +183,6 @@ input[type=search] {
   background-color: rgb(48, 179, 169);
 }
 
-#focused {
-  background-color: #AB9993;
-}
-
 ul {
   color: black;
 }
@@ -199,37 +199,46 @@ a:focus {
   background-color: rgb(171, 153, 147);
 }
 
+#pagetop {
+  margin-top: -2em;
+  margin-bottom: 1em;
+  /* border-bottom: solid 1px #dedddc; */
+  padding-bottom: 10px;
+  padding-top: 2em;
+}
+
+#pagetop img {
+  width: 23rem;
+  padding-bottom: 1rem;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-around;
+}
+
 .navigation a {
-  color: white;
+  color: rgb(39, 95, 101, 0.7);
+  border-style: solid;
+  border-width: 2px;
+  border-color: rgb(195, 232, 229, 0.5);
+  border-radius: 5px;
+  padding: 5px;
+  text-decoration: none;
+}
+
+.navigation a:hover {
+  border: 2px solid rgb(240, 135, 94, 0.3);
 }
 
 a img {
-  border: 2px solid rgb(0, 0, 0, 0); /*sets invisible border so doesnt move everything around*/
+  border: 2px solid rgb(0, 0, 0, 0);
+  /*sets invisible border so doesnt move everything around*/
 }
 
 a img:hover {
   border: 2px solid rgb(240, 135, 94, 0.5);
   border-radius: 5px;
-}
-
-#box1 {
-  background: #0AAD8F;
-}
-
-#box2 {
-  background: #C8FEF7;
-}
-
-#box3 {
-  background: #97F5E7;
-}
-
-#box4 {
-  background: #AB9993;
-}
-
-#box5 {
-  background: #F0875E;
 }
 
 /*IDs*/
@@ -282,75 +291,9 @@ a img:hover {
   border-style: solid;
 }
 
-.item img {
-  border: 1px solid black;
-}
-
-.item p {
-  max-width: 500px;
-}
-
-.quantity {
-  text-align: center;
-}
-
-.cart {
-  border: none;
-  outline: 0;
-  padding: 10px;
-  color: white;
-  background-color: rgb(48, 179, 169);
-  text-align: center;
-  cursor: pointer;
-  width: 100%;
-  font-size: 15px;
-}
-
-.cart:hover {
-  color: white;
-  text-decoration: underline;
-}
-
-/* Checkout */
-/* https://www.w3schools.com/howto/howto_css_checkout_form.asp */
-.row {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  margin: 0 -16px;
-}
-
-.col-25 {
-  -ms-flex: 25%;
-  flex: 25%;
-}
-
-.col-50 {
-  -ms-flex: 50%;
-  flex: 50%;
-}
-
-.col-75 {
-  -ms-flex: 75%;
-  flex: 75%;
-}
-
-.col-25,
-.col-50,
-.col-75 {
-  padding: 0 16px;
-}
-
 label {
   margin-bottom: 10px;
   display: block;
-}
-
-.icon-container {
-  margin-bottom: 20px;
-  padding: 7px 0;
-  font-size: 24px;
 }
 
 .btn {
@@ -367,11 +310,6 @@ label {
 
 .btn:hover {
   background-color: #45a049;
-}
-
-span.price {
-  float: right;
-  color: grey;
 }
 
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (and change the direction - make the "cart" column go on top) */
@@ -404,16 +342,6 @@ span.price {
 
   .fa-quote-left {
     padding-right: 8px;
-  }
-
-  #homepage {
-    margin-left: 0em;
-    margin-right: 0em;
-  }
-
-  #homepage ol {
-    margin-left: 1rem;
-    margin-right: 1rem;
   }
 
   button {
