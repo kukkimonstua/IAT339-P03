@@ -1,0 +1,432 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+/* imports font family from googleapis, websafe. must be first */
+body {
+  font-family: 'Raleway', Verdana, Helvetica, Arial, sans-serif;
+  padding: 7em;
+  max-width: 80em;
+  margin: auto;
+  background-image: url('../images/1.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+#pagetop {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  /* max-width: 100%; */
+  /* align-items: baseline; */
+  /* text-align: center; */
+  margin-top: -2em;
+  margin-bottom: 1em;
+  border-bottom: solid 1px #dedddc;
+  padding-bottom: 10px;
+  padding-top: 2em;
+}
+
+#pagetop img {
+  width: 25em;
+}
+
+header h5 {
+  padding-right: 2em;
+  font-size: 1.2em;
+}
+
+h1 {
+  margin-bottom: 0.5rem;
+  font-size: 2.2rem;
+}
+
+h2 {
+  /* https://www.w3schools.com/css/css_inline-block.asp
+  https://css-tricks.com/fighting-the-space-between-inline-block-elements/ */
+  margin-top: 1rem;
+  background-color: rgb(164, 245, 238, 0.4);
+  border-radius: 10px;
+  padding: 0.5em;
+}
+
+h3 {
+  font-style: italic;
+  margin-top: 1rem;
+}
+
+h4 {
+  margin-left: 0.1em;
+  margin-bottom: 0.25rem;
+  font-size: 1.2rem;
+}
+
+hr {
+  display: block;
+  overflow: hidden;
+  border-style: inset;
+  border-width: 1px;
+}
+
+table, th, td {
+  border: 1px solid black;
+}
+
+img {
+  max-width: 80em;
+}
+
+/* https://codepen.io/manabox/pen/raQmpL -------*/
+.cusInput input[type="radio"] {
+  /* Removes default radio Input*/
+  display: none;
+}
+
+/* Text box input field */
+/* https://www.w3schools.com/css/css_form.asp*/
+input[type=text] {
+  width: auto;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 3px solid #ccc;
+  border-radius: 3px;
+  outline: none;
+}
+
+input[type=text]:hover {
+  background: rgb(240, 135, 94, 0.1);
+}
+
+[type=text]:focus {
+  border: 3px solid #AB9993;
+}
+
+textarea {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+textarea:hover {
+  background: rgb(240, 135, 94, 0.1);
+}
+
+textarea:focus {
+  border: 3px solid #AB9993;
+}
+
+input[type=search] {
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+/* reset type button */
+[type=reset] {
+  display: inline-block;
+  padding: 0.4rem;
+  color: white;
+  border-radius: 4px;
+  /*https://www.w3schools.com/howto/howto_css_round_buttons.asp */
+  background-color: rgb(48, 179, 169);
+  transition-property: background-color;
+  transition-duration: 0.3s;
+  text-decoration: none;
+}
+
+[type=reset]:hover {
+  background-color: rgb(240, 135, 94);
+  cursor: pointer;
+}
+
+/*------- CLASSES -------*/
+.content {
+  margin: auto;
+  width: 90%;
+  display: block;
+  margin: auto;
+}
+
+.styleguide img {
+  max-width: 15em;
+}
+
+.button, [type=submit] {
+  display: inline-block;
+  padding: 0.4rem;
+  color: white;
+  border-radius: 4px;
+  background-color: rgb(48, 179, 169);
+  border: none;
+  transition-property: background-color;
+  transition-duration: 0.3s;
+  text-decoration: none;
+}
+
+.button:hover, [type=submit]:hover {
+  background-color: rgb(240, 135, 94);
+  cursor: pointer;
+}
+
+.button:focus, [type=submit]:focus {
+  background-color: rgb(240, 135, 94);
+}
+
+.button:active, [type=submit]:active {
+  background-color: rgb(48, 179, 169);
+}
+
+#focused {
+  background-color: #AB9993;
+}
+
+ul {
+  color: black;
+}
+
+a {
+  color: rgb(10, 173, 143);
+}
+
+a:hover {
+  color: rgb(240, 135, 94);
+}
+
+a:focus {
+  background-color: rgb(171, 153, 147);
+}
+
+.navigation a {
+  color: white;
+}
+
+a img {
+  border: 2px solid rgb(0, 0, 0, 0); /*sets invisible border so doesnt move everything around*/
+}
+
+a img:hover {
+  border: 2px solid rgb(240, 135, 94, 0.5);
+  border-radius: 5px;
+}
+
+#box1 {
+  background: #0AAD8F;
+}
+
+#box2 {
+  background: #C8FEF7;
+}
+
+#box3 {
+  background: #97F5E7;
+}
+
+#box4 {
+  background: #AB9993;
+}
+
+#box5 {
+  background: #F0875E;
+}
+
+/*IDs*/
+#cards {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  max-width: 100%;
+  justify-content: flex-start;
+}
+
+#cyantext {
+  color: #97F5E7;
+}
+
+#greentext {
+  color: #0AAD8F;
+}
+
+#orangetext {
+  color: #F0875E;
+}
+
+#browntext {
+  color: #AB9993;
+}
+
+/*classes*/
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  flex-basis: 15em;
+  max-width: 100%;
+  justify-content: flex-start;
+  padding: 5px 20px 15px 20px;
+}
+
+.styledbox {
+  text-align: center;
+  background: rgb(255, 255, 255);
+  /* background: radial-gradient(circle, rgba(255, 255, 255, 1) 65%, rgba(200, 254, 247, 0.5) 100%); */
+  padding: .5em;
+  max-width: 500px;
+  margin: .5em;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-width: 4px;
+  border-color: #97F5E7;
+  border-radius: 10px;
+  border-style: solid;
+}
+
+.item img {
+  border: 1px solid black;
+}
+
+.item p {
+  max-width: 500px;
+}
+
+.quantity {
+  text-align: center;
+}
+
+.cart {
+  border: none;
+  outline: 0;
+  padding: 10px;
+  color: white;
+  background-color: rgb(48, 179, 169);
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 15px;
+}
+
+.cart:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+/* Checkout */
+/* https://www.w3schools.com/howto/howto_css_checkout_form.asp */
+.row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: 0 -16px;
+}
+
+.col-25 {
+  -ms-flex: 25%;
+  flex: 25%;
+}
+
+.col-50 {
+  -ms-flex: 50%;
+  flex: 50%;
+}
+
+.col-75 {
+  -ms-flex: 75%;
+  flex: 75%;
+}
+
+.col-25,
+.col-50,
+.col-75 {
+  padding: 0 16px;
+}
+
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.icon-container {
+  margin-bottom: 20px;
+  padding: 7px 0;
+  font-size: 24px;
+}
+
+.btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  width: 100%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+.btn:hover {
+  background-color: #45a049;
+}
+
+span.price {
+  float: right;
+  color: grey;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (and change the direction - make the "cart" column go on top) */
+@media only screen and (max-width: 768px) {
+  body {
+    font-size: 20px;
+  }
+
+  .container {
+    padding: 0em;
+    margin: 0em;
+  }
+
+  .container #addressinfo, .container #cardinfo {
+    margin: 0em;
+  }
+
+  .row {
+    flex-direction: column-reverse;
+  }
+
+  .col-25 {
+    margin-bottom: 20px;
+  }
+
+  nav a {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .fa-quote-left {
+    padding-right: 8px;
+  }
+
+  #homepage {
+    margin-left: 0em;
+    margin-right: 0em;
+  }
+
+  #homepage ol {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  button {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .item {
+    width: 80%;
+  }
+
+  img {
+    width: 80%;
+  }
+}
