@@ -479,13 +479,17 @@ input[type=search] {
 }
 
 img.demo {
-  opacity: 0.6;
+  opacity: 0.4;
+  border: 2px solid;
+  border-radius: 5px;
+  width: 90%;
 }
 
 .active,
-.demo:hover {
+.demo:hover{
   opacity: 1;
   cursor: pointer;
+  border: 2px solid rgb(240, 135, 94, 0.5);
 }
 
 img.hover-shadow {
