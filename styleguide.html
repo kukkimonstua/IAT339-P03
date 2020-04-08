@@ -25,7 +25,7 @@
   </header>
 
   <h1>BASIC STYLE GUIDE ELEMENTS</h1>
-  <div class="styleguide" class="content">
+  <div class="styleguide" class="content" class="center">
 
     <div class="container">
       <h2>HEADINGS</h2>
@@ -126,38 +126,104 @@
       <p>Similar to a regular image, but for items rather than general images</p>
       <p>Item name will be provided under the image as well as the cost</p>
     </div>
-    </section>
+
 
     <h1>COMPLEX STYLE GUIDE ELEMENTS</h1>
     <div class="container">
       <h2>Gallery</h2>
       <div class="gallery">
-        <section class="styleditem">
+        <div class="styleditem">
           <img src="images/th-dialogue.PNG" alt="image1">
           <h5>Name</h5>
-          <p>A very short description for the top ones. Will this wrap? Bacon bacon bacon.</p>
-        </section>
-        <section class="styleditem">
+          <p class="caption">Hover over the image!</p>
+        </div>
+        <div class="styleditem">
           <img src="images/th-finalmenu.PNG" alt="image2">
           <h5>Name</h5>
-          <p>A very short description</p>
-        </section>
-        <section class="styleditem">
+          <p class="caption">Click on the image to see the lightbox modal!</p>
+        </div>
+        <div class="styleditem">
           <img src="images/th-dialogue.PNG" alt="image3">
-        </section>
-        <section class="styleditem">
+          <h5>Name</h5>
+          <p class="caption">Look at this on mobile!</p>
+        </div>
+        <div class="styleditem">
           <img src="images/th-outcome.PNG" alt="image1">
-        </section>
+          <h5>Name</h5>
+          <p class="caption">A very short description for the top ones. Will this wrap? Bacon bacon bacon. Bacon bacon bacon.</p>
+        </div>
+        <div class="styleditem">
+          <h2>Gallery with Flex</h2>
+          <div class="gallery-flex">
+            <img src="images/th-menu.PNG" onclick="openModal();currentSlide(1)" alt="interactive-diagram">
+            <img src="images/th-menu.PNG" onclick="openModal();currentSlide(2)" alt="interactive-diagram">
+          </div>
+        </div>
       </div>
     </div>
-    </section>
   </div>
+  <!-- lightbox tutorial https://www.w3schools.com/howto/howto_js_lightbox.asp -->
+  <!-- Modal/Lightbox Gallery interactive code taken from https://www.w3schools.com/howto/howto_js_lightbox.asp-->
+  <!-- The Modal/Lightbox -->
+  <div id="myModal" class="modal">
+    <!-- closes modal when clicked anywhere outside -->
+    <div class="closeModal" onclick="closeModal()">&times;</div>
+    <!-- closes modal when clicked on X  -->
+    <span class="close cursor" onclick="closeModal()">&times;</span>
+    <div class="modal-content">
+      <div class="mySlides">
+        <div class="numbertext">1 / 4</div>
+        <img src="images/th-menu.PNG" style="width:100%">
+      </div>
 
+      <div class="mySlides">
+        <div class="numbertext">2 / 4</div>
+        <img src="images/th-menu.PNG" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">3 / 4</div>
+        <img src="images/th-menu.PNG" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">4 / 4</div>
+        <img src="images/th-menu.PNG" style="width:100%">
+      </div>
+
+      <!-- Next/previous controls -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+      <!-- Caption text -->
+      <div class="caption-container">
+        <p id="caption">caption</p>
+      </div>
+
+      <!-- Thumbnail image controls -->
+      <div class="column">
+        <img class="demo" src="images/th-menu.PNG" onclick="currentSlide(1)" alt="Nature">
+      </div>
+
+      <div class="column">
+        <img class="demo" src="images/th-menu.PNG" onclick="currentSlide(2)" alt="Snow">
+      </div>
+
+      <div class="column">
+        <img class="demo" src="images/th-menu.PNG" onclick="currentSlide(3)" alt="Mountains">
+      </div>
+
+      <div class="column">
+        <img class="demo" src="images/th-menu.PNG" onclick="currentSlide(4)" alt="Lights">
+      </div>
+    </div>
+  </div>
   <footer>
     <a href="http://www.sfu.ca/~cmgraves/pub_html_CG/styleguide.html">Style Guide</a>
     <a href="https://github.com/kukkimonstua/IAT339_P03.git">Github</a>
     <a href="citations.html">Citations</a>
   </footer>
+  <script src="script.js"> </script>
 
 </body>
 

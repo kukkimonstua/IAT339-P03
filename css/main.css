@@ -4,7 +4,7 @@
 /* ---------------------- body ---------------------- */
 body {
   font-family: "Open Sans", Verdana, Helvetica, Arial, sans-serif;
-  /* padding: 3em; */
+  padding-top: 8em;
   max-width: 80em;
   margin: auto;
   background-image: url('../images/background.png');
@@ -170,6 +170,13 @@ input[type=search] {
   margin-right: auto;
 }
 
+/* ---------------------- image gallery ---------------------- */
+.caption {
+  max-width: 25em;
+  margin: auto;
+  margin-top: 1em;
+}
+
 .gallery img {
   width: 64em;
   border-width: 4px;
@@ -186,6 +193,23 @@ input[type=search] {
   border-radius: 10px;
   transform: scale(1.05);
   transition: .3s transform ease;
+  cursor: pointer;
+  border-color: rgb(240, 135, 94, 0.5);
+}
+
+.gallery-flex {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.gallery-flex img {
+  max-width: 30em;
+}
+
+.long-image {
+  max-width: 50em;
 }
 
 /* ---------------------- images ---------------------- */
@@ -335,6 +359,143 @@ input[type=search] {
   background-color: rgb(48, 179, 169);
 }
 
+/* ---------------------- GALLERY LIGHTBOX code taken from https://www.w3schools.com/howto/howto_js_lightbox.asp---------------------- */
+.row>.column {
+  padding: 0 8px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Create four equal columns that floats next to eachother */
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px;
+}
+
+/* The Close Modal by clicking on x */
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* The Close Modal by clicking anywhere outside */
+.closeModal {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+/* Hide the slides by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Caption text */
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
+
+img.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+img.hover-shadow {
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
 /* ---------------------- responsiveness ---------------------- */
 @media only screen and (max-width: 1200px) {
 
@@ -358,7 +519,8 @@ input[type=search] {
 @media only screen and (max-width: 800px) {
   body {
     font-size: 20px;
-    padding: 0.5em;
+    padding: 0.4em;
+    margin: 0em;
   }
 
   #pagetop img {
@@ -379,10 +541,21 @@ input[type=search] {
 
   .container, .container-nobackground {
     padding: 1em;
+    margin: 0.1em;
   }
 
   .content img {
-    width: 100%;
+    width: 90%;
+  }
+
+  .gallery img {
+    border-color: rgb(240, 135, 94, 0.5);
+    width: 90%;
+  }
+
+  .styleditem {
+    padding: 0em;
+    margin: 0em;
   }
 
   .button, [type=submit] {
@@ -400,6 +573,6 @@ input[type=search] {
 
 @media only screen and (max-width: 375px) {
   img {
-    width: 80%;
+    width: 100%;
   }
 }
