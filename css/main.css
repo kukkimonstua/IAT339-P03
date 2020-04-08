@@ -1,32 +1,30 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:200,300,400,600,700,800');
 
 /* imports font family from googleapis, websafe. must be first */
+/* ---------------------- body ---------------------- */
 body {
   font-family: "Open Sans", Verdana, Helvetica, Arial, sans-serif;
   padding: 7em;
   max-width: 80em;
   margin: auto;
-  background-image: url('../images/1.png');
+  background-image: url('../images/background.png');
+  background-color: #e7f4f7;
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
 }
 
+/* ---------------------- paragraph ---------------------- */
 p {
   font-size: 1em;
   font-style: normal;
   font-variant: normal;
   font-weight: 400;
-  line-height: 20px;
-  text-align: left;
+  line-height: 1.5em;
 }
 
-header h5 {
-  padding-right: 2em;
-  font-size: 1.2em;
-}
-
+/* ---------------------- headers ---------------------- */
 h1 {
   margin-bottom: 0.5rem;
   font-size: 2.2rem;
@@ -53,22 +51,53 @@ h4 {
   font-size: 1.2rem;
 }
 
-hr {
-  display: block;
-  overflow: hidden;
-  border-style: inset;
-  border-width: 1px;
+h5 {
+  margin-top: 0.3em;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #414141;
 }
 
-table, th, td {
-  border: 1px solid black;
+/* for subheader */
+h6 {
+  margin-top: -1em;
+  margin-bottom: 1em;
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: #414141;
 }
 
+/* ---------------------- images ---------------------- */
 img {
   max-width: 80em;
+  height: auto;
+  object-fit: cover;
 }
 
-/* Text box input field */
+/* ---------------------- links ---------------------- */
+a {
+  color: rgb(10, 173, 143);
+}
+
+a:hover {
+  color: rgb(240, 135, 94);
+}
+
+a:focus {
+  color: rgb(171, 153, 147);
+}
+
+a img {
+  border: 2px solid rgb(0, 0, 0, 0);
+  /*sets invisible border so doesnt move everything around*/
+}
+
+a img:hover {
+  border: 2px solid rgb(240, 135, 94, 0.5);
+  border-radius: 5px;
+}
+
+/* ---------------------- text input field ---------------------- */
 /* https://www.w3schools.com/css/css_form.asp*/
 input[type=text], select, textarea {
   display: block;
@@ -90,12 +119,6 @@ textarea {
   overflow: scroll;
 }
 
-#contactform-container {
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 20px;
-}
-
 input[type=text]:hover {
   background: rgb(255, 167, 138, 0.1);
 }
@@ -111,7 +134,7 @@ input[type=search] {
   border-radius: 3px;
 }
 
-/* reset type button */
+/* ---------------------- reset button (unused) ---------------------- */
 [type=reset] {
   display: inline-block;
   padding: 0.4rem;
@@ -129,18 +152,16 @@ input[type=search] {
   cursor: pointer;
 }
 
-/*------- CLASSES -------*/
+/* ---------------------- content ---------------------- */
 .content {
   margin: auto;
+  padding-top: 2.5em;
   width: 90%;
   display: block;
   margin: auto;
 }
 
-.center img {
-  max-width: 15em;
-}
-
+/* ---------------------- centering ---------------------- */
 .center {
   display: block;
   text-align: center;
@@ -148,11 +169,134 @@ input[type=search] {
   margin-right: auto;
 }
 
+.center img {
+  max-width: 56em;
+  border-width: 4px;
+  border-color: transparent;
+  border-radius: 10px;
+  border-style: solid;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
+  object-fit: cover;
+  transition: .3s transform ease;
+}
+
+.center img:hover {
+  border-width: 4px;
+  border-radius: 10px;
+  transform: scale(1.05);
+  transition: .3s transform ease;
+}
+
+/* ---------------------- images ---------------------- */
+.medium-image {
+  max-width: 15em;
+}
+
+.small-image {
+  max-width: 6em;
+}
+
+/* ---------------------- styleguide ---------------------- */
 .styleguide img {
   max-width: 15em;
 }
 
+.styleguide .container {
+  margin: 1em;
+}
+
+/* ---------------------- container ---------------------- */
+.container {
+  margin-left: 8em;
+  margin-right: 8em;
+  margin-bottom: 1em;
+  margin-top: 1em;
+  border-radius: 5px;
+  border-style: solid;
+  background-color: rgb(138, 189, 183, 0.2);
+  border-color: rgb(111, 209, 198, 0.4);
+  padding: 20px;
+  color: #1f1f1f;
+}
+
+/* ---------------------- gallery ---------------------- */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  flex-grow: 1;
+  flex-shrink: 1;
+  justify-content: space-around;
+}
+
+.styleditem {
+  text-align: center;
+  padding: .5em;
+  margin: .5em;
+  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
+}
+
+.styleditem img {
+  border-width: 4px;
+  border-color: transparent;
+  border-radius: 10px;
+  max-width: 30em;
+  max-height: 18em;
+  border-style: solid;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
+  object-fit: cover;
+  transition: .3s transform ease;
+}
+
+.styleditem img:hover {
+  border-width: 4px;
+  border-radius: 10px;
+  transform: scale(1.05);
+  transition: .3s transform ease;
+}
+
+.styleditem p {
+  color: #414141;
+}
+
+.styleditem h5 {
+  margin-bottom: -0.6em;
+  padding: 0em;
+}
+
+.styled label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+/* ---------------------- navigation ---------------------- */
+#pagetop img {
+  width: 23rem;
+  height: auto;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  flex-basis: 10em;
+}
+
+.navigation a {
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  color: rgb(39, 95, 101, 0.7);
+  border-color: rgb(195, 232, 229, 0.5);
+  text-decoration: none;
+}
+
+.navigation a:hover {
+  color: rgb(240, 135, 94);
+}
+
+/* ---------------------- buttons ---------------------- */
 .button, [type=submit] {
+  text-align: center;
   display: inline-block;
   padding-top: 0.7rem;
   padding-bottom: 0.7rem;
@@ -169,6 +313,7 @@ input[type=search] {
 
 .button:hover, [type=submit]:hover {
   background-color: rgb(240, 135, 94);
+  color: white;
   cursor: pointer;
 }
 
@@ -180,165 +325,65 @@ input[type=search] {
   background-color: rgb(48, 179, 169);
 }
 
-ul {
-  color: black;
-}
-
-a {
-  color: rgb(10, 173, 143);
-}
-
-a:hover {
-  color: rgb(240, 135, 94);
-}
-
-a:focus {
-  background-color: rgb(171, 153, 147);
-}
-
-#pagetop {
-  margin-top: -2em;
-  margin-bottom: 1em;
-  padding-bottom: 10px;
-  padding-top: 2em;
-}
-
-#pagetop img {
-  width: 23rem;
-  padding-bottom: 1rem;
-}
-
-.navigation {
-  display: flex;
-  justify-content: space-around;
-}
-
-.navigation a {
-  color: rgb(39, 95, 101, 0.7);
-  border-color: rgb(195, 232, 229, 0.5);
-  text-decoration: none;
-}
-
-.navigation a:hover {
-  color: rgb(240, 135, 94);
-}
-
-a img {
-  border: 2px solid rgb(0, 0, 0, 0);
-  /*sets invisible border so doesnt move everything around*/
-}
-
-a img:hover {
-  border: 2px solid rgb(240, 135, 94, 0.5);
-  border-radius: 5px;
-}
-
-/*IDs*/
-#cards {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  max-width: 100%;
-  justify-content: flex-start;
-}
-
-#cyantext {
-  color: #97F5E7;
-}
-
-#greentext {
-  color: #0AAD8F;
-}
-
-#orangetext {
-  color: #F0875E;
-}
-
-#browntext {
-  color: #AB9993;
-}
-
-/*classes*/
-.container {
-  border-radius: 5px;
-  border-style: solid;
-  border-color: rgb(164, 245, 238, 0.4);
-  background-color: rgb(118, 173, 168,0.2);
-  padding: 20px;
-}
-
-.styledbox {
-  text-align: center;
-  background: rgb(255, 255, 255);
-  padding: .5em;
-  max-width: 500px;
-  margin: .5em;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  border-width: 4px;
-  border-color: #97F5E7;
-  border-radius: 10px;
-  border-style: solid;
-}
-
-label {
-  margin-bottom: 10px;
-  display: block;
-}
-
-.btn {
-  background-color: #4CAF50;
-  color: white;
-  padding: 12px;
-  margin: 10px 0;
-  border: none;
-  width: 100%;
-  border-radius: 3px;
-  cursor: pointer;
-  font-size: 17px;
-}
-
-.btn:hover {
-  background-color: #45a049;
-}
-
-/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (and change the direction - make the "cart" column go on top) */
-@media only screen and (max-width: 768px) {
+/* ---------------------- responsiveness ---------------------- */
+@media only screen and (max-width: 1200px) {
   body {
-    font-size: 20px;
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+
+  .content {
+    padding-left: 1em;
+    padding-right: 1em;
   }
 
   .container {
-    padding: 0em;
-    margin: 0em;
+    margin-left: 1em;
+    margin-right: 1em;
   }
+}
 
-  .row {
-    flex-direction: column-reverse;
-  }
-
-  .col-25 {
-    margin-bottom: 20px;
-  }
-
-  nav a {
+/* Responsive - when the screen is less than 800px wide*/
+@media only screen and (max-width: 800px) {
+  body {
     font-size: 20px;
-    margin-bottom: 10px;
+    padding: 0.5em;
   }
 
-  .fa-quote-left {
-    padding-right: 8px;
+  #pagetop img {
+    width: 100%;
+    height: auto;
+    padding-top: 1rem;
   }
 
-  button {
+  .navigation {
+    display: block;
+  }
+
+  .navigation a {
+    display: block;
     font-size: 20px;
+    padding: 1rem;
+  }
+
+  .container {
+    padding: 1em;
+  }
+
+  .button, [type=submit] {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 1.2em;
+  }
+
+  input[type=text], select, textarea {
+    width: 100%;
+    height: 4.5em;
+    padding: 10px;
   }
 }
 
 @media only screen and (max-width: 375px) {
-  .item {
-    width: 80%;
-  }
-
   img {
     width: 80%;
   }
