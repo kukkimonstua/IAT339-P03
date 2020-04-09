@@ -586,7 +586,7 @@ input[type=search] {
 .next {
   cursor: pointer;
   position: absolute;
-  top: 30%;
+  top: 15%;
   width: auto;
   padding: 16px;
   /* margin-top: -50px; */
@@ -674,13 +674,6 @@ p.bold {
 
 /* ---------------------- responsiveness ---------------------- */
 @media only screen and (max-width: 1200px) {
-
-  /* body {
-    margin-left: 1em;
-    margin-right: 1em;
-    padding-left: 1em;
-    padding-right: 1em;
-  } */
   .content img {
     width: 100%;
   }
@@ -749,7 +742,7 @@ p.bold {
   /* Next & previous buttons */
   .prev,
   .next {
-    top: 0;
+    top: 100px;
   }
 
   img.demo {

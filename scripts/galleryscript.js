@@ -4,7 +4,7 @@ function onHover() {
 }
 
 function offHover() {
-  document.getElementById("changeImg").src = 'images/thecube.PNG';
+  document.getElementById("changeImg").src = 'images/thecube.png';
 }
 // HAMBURGER DROPDOWN MENU code taken from https://www.w3schools.com/howto/howto_js_responsive_navbar_dropdown.asp
 function myFunction() {
