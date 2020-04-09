@@ -135,17 +135,17 @@ footer .active {
 }
 
 /* ---------------------- navigation ---------------------- */
-#pagetop img {
+#pagetop img, #pagetop-styleguide img {
   width: 23rem;
   height: auto;
   border-width: 0px;
 }
 
-#pagetop img:hover {
+#pagetop img:hover, #pagetop-styleguide img:hover {
   border-width: 0px;
 }
 
-#pagetop a:hover {
+#pagetop a:hover, #pagetop-styleguide a:hover {
   opacity: 0.5;
 }
 
@@ -692,7 +692,7 @@ p.bold {
     margin: 0em;
   }
 
-  #pagetop img {
+  #pagetop img, #pagetop-styleguide img {
     width: 100%;
     height: auto;
     padding-top: 1rem;
