@@ -31,9 +31,19 @@ h1 {
 }
 
 h2 {
-  font-size: 2em;
+  font-size: 3em;
+  margin-bottom: 0.3em;
+  margin-top: 0;
   font-weight: 400;
   color: #414141;
+}
+
+h2 a {
+  text-decoration: none;
+}
+
+h2 img {
+  width: 5%;
 }
 
 h3 {
@@ -95,6 +105,26 @@ a img {
 a img:hover {
   border: 2px solid rgb(240, 135, 94, 0.5);
   border-radius: 5px;
+}
+
+/* ---------------------- footer ---------------------- */
+footer {
+  position: static;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(118, 173, 168);
+  color: white;
+  text-align: center;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+  padding-left: 1em;
+  padding-right: 1em;
 }
 
 /* ---------------------- text input field ---------------------- */
@@ -170,58 +200,6 @@ input[type=search] {
   margin-right: auto;
 }
 
-/* ---------------------- image gallery ---------------------- */
-.caption {
-  max-width: 25em;
-  margin: auto;
-  margin-top: 1em;
-}
-
-.gallery img {
-  width: 64em;
-  border-width: 4px;
-  border-color: transparent;
-  border-radius: 10px;
-  border-style: solid;
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
-  object-fit: cover;
-  transition: .3s transform ease;
-}
-
-.gallery img:hover {
-  border-width: 4px;
-  border-radius: 10px;
-  transform: scale(1.05);
-  transition: .3s transform ease;
-  cursor: pointer;
-  border-color: rgb(240, 135, 94, 0.5);
-}
-
-.gallery-flex {
-  display: flex;
-  justify-content: space-around;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-
-.gallery-flex figcaption {
-  font-weight: 300;
-  color: #1f1f1f;
-}
-.gallery-flex figure {
-  text-align: center;
-  margin: 0px;
-  padding: 0px;
-}
-
-.gallery-flex img {
-  max-width: 30em;
-}
-
-.long-image {
-  max-width: 50em;
-}
-
 /* ---------------------- images ---------------------- */
 .medium-image {
   max-width: 15em;
@@ -271,6 +249,65 @@ input[type=search] {
   flex-grow: 1;
   flex-shrink: 1;
   justify-content: space-around;
+}
+
+.gallery img {
+  width: 64em;
+  border-width: 4px;
+  border-color: transparent;
+  border-radius: 10px;
+  border-style: solid;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
+  object-fit: cover;
+  transition: .3s transform ease;
+}
+
+.gallery img:hover {
+  border-width: 4px;
+  border-radius: 10px;
+  transform: scale(1.05);
+  transition: .3s transform ease;
+  cursor: pointer;
+  border-color: rgb(240, 135, 94, 0.5);
+}
+
+.gallery-flex {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.gallery-flex figcaption {
+  font-weight: 300;
+  color: #1f1f1f;
+}
+
+.gallery-flex figure {
+  text-align: center;
+  margin: 0px;
+  padding: 0px;
+}
+
+.gallery-flex img {
+  max-width: 30em;
+  max-height: 20em;
+}
+
+.caption {
+  max-width: 25em;
+  margin: auto;
+  margin-top: 1em;
+}
+
+
+.long-image {
+  max-width: 50em;
+}
+
+.large-image {
+  max-height: 20em;
+  max-width: 30em;
 }
 
 .styleditem {

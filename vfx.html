@@ -3,7 +3,7 @@
 
 
 <head>
-  <meta charset="utf-8">
+  <meta charset="utf-15">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact</title>
   <link href="css/main.css" rel="stylesheet">
@@ -12,7 +12,7 @@
 <body>
   <header>
     <div id="pagetop">
-      <img src="images/logoname.png" alt="logo">
+      <a href="index.html"> <img src="images/logoname.png" alt="logo"></a>
       <nav class="navigation">
         <a href="index.html">Home</a>
         <a href="visualnovel.html">Visual Novel</a>
@@ -25,16 +25,220 @@
 
   <div class="content">
     <div class="center">
-      <h2>hey there! i'm emily.</h2>
-      <img src="images/eychowportrait.png" alt="portrait" class="medium-image">
+      <h2> <a href="https://vimeo.com/2443015946"> The Cube </a></h2>
+      <h6>a short skit using visual effects</h6>
+      <div class="gallery">
+        <iframe src="https://player.vimeo.com/video/2443015946" width="1920" height=575 frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+      </div>
+    </div>
+    <div class="container-nobackground">
+      <p>This is a working prototpye that was done for Simon Fraser's <a href="https://www.sfu.ca/outlines.html?20115/fall/iat/344/d100">Moving Images (IAT 344) course</a></p>
+      <p> A weird afternoon for a girl casually walking home until a glowing
+        cube is dropped from the skies. With nothing else to do, she fumbles with it, leading to an unexpected outcome.
+        This is a 30 second short film that was done individually in IAT 344: Moving Images class at Simon Fraser University. Through this film, I've learned how to create visual effects that include: A cube that glows, a laser beam, cloning a
+        person, and a sci-fi portal. </p>
+      <p>Actor: Emily Chen</p>
     </div>
     <div class="container">
-      <p>From the first video game I played to the first animation I made, I became entranced with the world of entertainment as a career. I asked myself, what is it about new media arts that makes me feel this way? I realized the magic comes from
-        within storytelling and interaction. The idea of being able to immerse someone inside an entire world that I created made me fall in love with cinematography, storytelling, and game developing. As a student of Interactive Arts and Technology
-        at
-        Simon Fraser University, my passion in making entertainment is the ability to tap into my audience's emotions.</p>
+      <h2>Visual Effects - Portal using Fractal Noise</h2>
+      <p>To make the portal, I used fractal noise, turbulent displacement, and a ellipse mask to make a wavy outline. The noise rotates behind the mask by using an expression, multiplying the time it takes for one revolution and creating a
+        distortion. Futhermore, by applying a blur, it creates a soft glow around the edges.</p>
+      <div class="gallery" class="styleditem">
+        <div class="gallery-flex">
+          <img src="images/vfx-fractal.png" onclick="openModal();currentSlide(1)" alt="fractal noise">
+          <img src="images/vfx-fx.png" onclick="openModal();currentSlide(2)" alt="fractal noise fx">
+          <img src="images/vfx-portal1.png" onclick="openModal();currentSlide(3)" alt="Portal Outline">
+        </div>
+      </div>
+      <p>The turbulent displace fx is applied to give futher distortion to the outline, creating a energy field look and feel. After creating the distorted outline, I applied it to a background as a mask to make it look like it was a portal to
+        another dimension.</p>
+      <div class="gallery" class="styleditem">
+        <div class="gallery-flex">
+          <img src="images/vfx-turbulent.png" onclick="openModal();currentSlide(4)" alt="turbulent fx">
+          <img src="images/vfx-portal2.png" onclick="openModal();currentSlide(5)" alt="Portal Masked">
+          <img src="images/vfx-portal3.png" onclick="openModal();currentSlide(6)" alt="Portal Final">
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <h2>Visual Effects - Glow and Clones using Rotobrush</h2>
+      <p>The glow effect is applied to both the cube and beam of light. To do this, I used the roto brush tool which creates a mask around colors that are similar to the one i selected. It was quiet hard to distinguish the white box from the ground
+        because both were of similar color. Although it took extra time to mask, the result is quite successful. As a result, I learned props should be in distinct colours for visual effects.</p>
+      <div class="gallery" class="styleditem">
+        <div class="gallery-flex">
+          <img src="images/vfx-glow.png" onclick="openModal();currentSlide(7)" alt="glow">
+          <img src="images/thecube.png" onclick="openModal();currentSlide(8)" alt="glow result">
+        </div>
+      </div>
+      <p>The same technique, rotobrushing, was applied to cloning the actor on the same screen. I also used a tri-pod to stablize the camera so that the background stayed the same. Since her clothes were darker, it was easier to apply the mask. </p>
+      <div class="gallery" class="styleditem">
+        <div class="gallery-flex">
+          <img src="images/vfx-rotobrush.png" onclick="openModal();currentSlide(9)" alt="rotobrush">
+          <img src="images/vfx-cloning.png" onclick="openModal();currentSlide(10)" alt="cloning result">
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <h2>Storyboard</h2>
+      <p>With the idea in mind, I began the storyboard and moodboard to convey the tone and mood of each scene visually. The final result closely follows the storyboard but some shots were revised for the better.</p>
+      <div class="gallery" class="styleditem">
+        <div class="gallery-flex">
+          <img src="images/vfx-storyboard.png" onclick="openModal();currentSlide(11)" alt="Storyboard">
+          <img src="images/vfx-moodboard.png" onclick="openModal();currentSlide(12)" alt="Moodboard">
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <h2>Filming</h2>
+      <p>I scouted out an appropriate location to shoot my film. This area was secluded as very little vehicles and people pass by. However, I was unable to re-shoot footage as it was raining for many weeks. Weather should be checked early on or the
+        filming could have begun earlier next time.</p>
+      <div class="gallery" class="styleditem">
+        <div class="gallery-flex">
+          <img src="images/vfx-actor.jpg" onclick="openModal();currentSlide(13)" alt="Actor">
+          <img src="images/vfx-setting.jpg" onclick="openModal();currentSlide(14)" alt="Setting">
+        </div>
+        <p>As the actor was my close friend, we we're both in a comfortable environment and I was able to easily direct her through the film.​ However, she was also busy with school and could only help film on specific days. Hence, I was unable to
+          re-shoot shaky footage but used the warp stabilizer effect instead.</p>
+        <img src="images/vfx-warpstablizer.png" onclick="openModal();currentSlide(15)" alt="warp stablizer" class="large-image">
+      </div>
     </div>
   </div>
+
+  <!-- lightbox tutorial https://www.w3schools.com/howto/howto_js_lightbox.asp -->
+  <!-- Modal/Lightbox Gallery interactive code taken from https://www.w3schools.com/howto/howto_js_lightbox.asp-->
+  <!-- The Modal/Lightbox -->
+  <div id="myModal" class="modal">
+    <!-- closes modal when clicked anywhere outside -->
+    <div class="closeModal" onclick="closeModal()">&times;</div>
+    <!-- closes modal when clicked on X  -->
+    <span class="close cursor" onclick="closeModal()">&times;</span>
+    <div class="modal-content">
+      <div class="mySlides">
+        <div class="numbertext">1 / 15</div>
+        <img src="images/vfx-fractal.png" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">2 / 15</div>
+        <img src="images/vfx-fx.png" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">3 / 15</div>
+        <img src="images/vfx-portal1.png" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">4 / 15</div>
+        <img src="images/vfx-turbulent.png" style="width:100%">
+      </div>
+      <div class="mySlides">
+        <div class="numbertext">5 / 15</div>
+        <img src="images/vfx-portal2.png" style="width:100%">
+      </div>
+      <div class="mySlides">
+        <div class="numbertext">6 / 15</div>
+        <img src="images/vfx-portal3.png" style="width:100%">
+      </div>
+      <div class="mySlides">
+        <div class="numbertext">7 / 15</div>
+        <img src="images/vfx-glow.png" style="width:100%">
+      </div>
+      <div class="mySlides">
+        <div class="numbertext">8 / 15</div>
+        <img src="images/thecube.png" style="width:100%">
+      </div>
+      <div class="mySlides">
+        <div class="numbertext">9 / 15</div>
+        <img src="images/vfx-rotobrush.png" style="width:100%">
+      </div>
+      <div class="mySlides">
+        <div class="numbertext">10 / 15</div>
+        <img src="images/vfx-cloning.png" style="width:100%">
+      </div>
+      <div class="mySlides">
+        <div class="numbertext">11 / 15</div>
+        <img src="images/vfx-storyboard.png" style="width:100%">
+      </div>
+      <div class="mySlides">
+        <div class="numbertext">12 / 15</div>
+        <img src="images/vfx-moodboard.png" style="width:100%">
+      </div>
+      <div class="mySlides">
+        <div class="numbertext">13 / 15</div>
+        <img src="images/vfx-actor.jpg" style="width:100%">
+      </div>
+      <div class="mySlides">
+        <div class="numbertext">14 / 15</div>
+        <img src="images/vfx-setting.jpg" style="width:100%">
+      </div>
+      <div class="mySlides">
+        <div class="numbertext">15 / 15</div>
+        <img src="images/vfx-warpstablizer.png" style="width:100%">
+      </div>
+      <!-- Next/previous controls -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      <!-- Caption text -->
+      <div class="caption-container">
+        <p id="caption">caption</p>
+      </div>
+
+      <div class="modal-icon">
+        <!-- Thumbnail image controls -->
+        <div class="column">
+          <img class="demo" src="images/vfx-fractal.png" onclick="currentSlide(1)" alt="vfx- 1">
+        </div>
+
+        <div class="column">
+          <img class="demo" src="images/vfx-fx.png" onclick="currentSlide(2)" alt="vfx- 2">
+        </div>
+
+        <div class="column">
+          <img class="demo" src="images/vfx-portal1.png" onclick="currentSlide(3)" alt="vfx- 3">
+        </div>
+
+        <div class="column">
+          <img class="demo" src="images/vfx-turbulent.png" onclick="currentSlide(4)" alt="">
+        </div>
+        <div class="column">
+          <img class="demo" src="images/vfx-portal2.png" onclick="currentSlide(5)" alt="">
+        </div>
+        <div class="column">
+          <img class="demo" src="images/vfx-portal3.png" onclick="currentSlide(6)" alt="">
+        </div>
+        <div class="column">
+          <img class="demo" src="images/vfx-glow.png" onclick="currentSlide(7)" alt="vfx-">
+        </div>
+        <div class="column">
+          <img class="demo" src="images/thecube.png" onclick="currentSlide(8)" alt="">
+        </div>
+        <div class="column">
+          <img class="demo" src="images/vfx-rotobrush.png" onclick="currentSlide(9)" alt="">
+        </div>
+        <div class="column">
+          <img class="demo" src="images/vfx-cloning.png" onclick="currentSlide(10)" alt="">
+        </div>
+        <div class="column">
+          <img class="demo" src="images/vfx-storyboard.png" onclick="currentSlide(11)" alt="">
+        </div>
+        <div class="column">
+          <img class="demo" src="images/vfx-moodboard.png" onclick="currentSlide(12)" alt="">
+        </div>
+        <div class="column">
+          <img class="demo" src="images/vfx-actor.jpg" onclick="currentSlide(13)" alt="">
+        </div>
+        <div class="column">
+          <img class="demo" src="images/vfx-setting.jpg" onclick="currentSlide(14)" alt="">
+        </div>
+        <div class="column">
+          <img class="demo" src="images/vfx-warpstablizer.png" onclick="currentSlide(15)" alt="">
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <script src="scripts/script.js"> </script>
 
 </body>
 
