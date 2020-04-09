@@ -12,7 +12,7 @@
 <body>
   <header>
     <div id="pagetop">
-      <img src="images/logoname.png" alt="logo">
+      <a href="index.html"> <img src="images/logoname.png" alt="logo"></a>
       <nav class="navigation">
         <a href="index.html">Home</a>
         <a href="visualnovel.html">Visual Novel</a>
@@ -76,51 +76,60 @@
     <span class="close cursor" onclick="closeModal()">&times;</span>
     <div class="modal-content">
       <div class="mySlides">
-        <div class="numbertext">1 / 4</div>
+        <div class="numbertext">1 / 5</div>
         <img src="images/th-diagram1.PNG" style="width:100%">
       </div>
 
       <div class="mySlides">
-        <div class="numbertext">2 / 4</div>
+        <div class="numbertext">2 / 5</div>
         <img src="images/th-diagram2.PNG" style="width:100%">
       </div>
 
       <div class="mySlides">
-        <div class="numbertext">3 / 4</div>
+        <div class="numbertext">3 / 5</div>
         <img src="images/th-diagram3.PNG" style="width:100%">
       </div>
 
       <div class="mySlides">
-        <div class="numbertext">4 / 4</div>
+        <div class="numbertext">4 / 5</div>
+        <img src="images/th-menu.PNG" style="width:100%">
+      </div>
+      <div class="mySlides">
+        <div class="numbertext">5 / 5</div>
         <img src="images/th-menu.PNG" style="width:100%">
       </div>
 
       <!-- Next/previous controls -->
       <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
       <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
       <!-- Caption text -->
       <div class="caption-container">
         <p id="caption">caption</p>
       </div>
 
-      <!-- Thumbnail image controls -->
-      <div class="column">
-        <img class="demo" src="images/th-diagram1.PNG" onclick="currentSlide(1)" alt="Nature">
-      </div>
+      <div class="modal-icon">
+        <!-- Thumbnail image controls -->
+        <div class="column">
+          <img class="demo" src="images/th-diagram1.PNG" onclick="currentSlide(1)" alt="Nature">
+        </div>
 
-      <div class="column">
-        <img class="demo" src="images/th-diagram2.PNG" onclick="currentSlide(2)" alt="Snow">
-      </div>
+        <div class="column">
+          <img class="demo" src="images/th-diagram2.PNG" onclick="currentSlide(2)" alt="Snow">
+        </div>
 
-      <div class="column">
-        <img class="demo" src="images/th-diagram3.PNG" onclick="currentSlide(3)" alt="Mountains">
-      </div>
+        <div class="column">
+          <img class="demo" src="images/th-diagram3.PNG" onclick="currentSlide(3)" alt="Mountains">
+        </div>
 
-      <div class="column">
-        <img class="demo" src="images/th-menu.PNG" onclick="currentSlide(4)" alt="Lights">
+        <div class="column">
+          <img class="demo" src="images/th-menu.PNG" onclick="currentSlide(4)" alt="Lights">
+        </div>
+        <div class="column">
+          <img class="demo" src="images/th-menu.PNG" onclick="currentSlide(5)" alt="Lights">
+        </div>
       </div>
     </div>
+
   </div>
   <script src="script.js"> </script>
 
