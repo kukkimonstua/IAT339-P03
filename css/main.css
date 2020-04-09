@@ -204,6 +204,16 @@ input[type=search] {
   flex-wrap: wrap;
 }
 
+.gallery-flex figcaption {
+  font-weight: 300;
+  color: #1f1f1f;
+}
+.gallery-flex figure {
+  text-align: center;
+  margin: 0px;
+  padding: 0px;
+}
+
 .gallery-flex img {
   max-width: 30em;
 }
@@ -406,6 +416,7 @@ input[type=search] {
   padding: 0;
   width: 90%;
   max-width: 1200px;
+  height: 1300px;
 }
 
 /* The Close Modal by clicking on x */
@@ -504,10 +515,12 @@ img.demo {
   opacity: 0.6;
   background-color: white;
   border: 3px solid;
-  border-color: rgb(164, 245, 238);;
+  border-color: rgb(164, 245, 238);
+  ;
   border-radius: 5px;
-  height: 100%;
+  height: 90%;
   width: 90%;
+  margin-top: 1em;
 }
 
 .active,
@@ -597,6 +610,12 @@ img.hover-shadow {
     width: 100%;
     height: 4.5em;
     padding: 10px;
+  }
+
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    top: 0;
   }
 }
 
