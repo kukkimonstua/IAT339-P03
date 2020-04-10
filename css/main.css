@@ -42,10 +42,6 @@ h2 a {
   text-decoration: none;
 }
 
-h2 img {
-  width: 5%;
-}
-
 h3 {
   margin-top: 1rem;
   border-radius: 10px;
@@ -82,6 +78,12 @@ img {
   max-width: 80em;
   height: auto;
   object-fit: cover;
+}
+
+figcaption {
+  font-weight: 400;
+  color: gray;
+  font-size: 1em;
 }
 
 /* ---------------------- links ---------------------- */
@@ -334,7 +336,7 @@ input[type=search] {
 }
 
 .small-image {
-  max-width: 6em;
+  max-width: 2em;
 }
 
 /* ---------------------- styleguide ---------------------- */
@@ -398,6 +400,11 @@ input[type=search] {
   transition: .3s transform ease;
   cursor: pointer;
   border-color: rgb(240, 135, 94, 0.5);
+}
+
+.gallery figure {
+  margin-bottom: 1em;
+  margin-top: 1em;
 }
 
 .gallery-flex {
@@ -692,10 +699,26 @@ p.bold {
     margin: 0em;
   }
 
+  h2 {
+    font-size: 1.5em;
+    margin-top: 0.5em;
+  }
+
+  h6 {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 1em;
+  }
+
   #pagetop img, #pagetop-styleguide img {
     width: 100%;
     height: auto;
     padding-top: 1rem;
+  }
+
+  .small-image {
+    margin-top: 1em;
+    max-width: 5em;
   }
 
   .navigation {
@@ -709,8 +732,15 @@ p.bold {
   }
 
   .container, .container-nobackground {
-    padding: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-bottom: 1em;
+    padding-top: 0;
     margin: 0.1em;
+  }
+
+  .content {
+    padding-top: 1em;
   }
 
   .content img {
@@ -725,6 +755,15 @@ p.bold {
   .styleditem {
     padding: 0em;
     margin: 0em;
+  }
+
+  .gallery figure {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  figcaption {
+    font-size: 0.8em;
   }
 
   .button, [type=submit] {
