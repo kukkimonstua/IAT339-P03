@@ -693,6 +693,10 @@ p.bold {
   h1 {
     margin-left: 10px;
   }
+
+  #pagetop img, #pagetop-styleguide img {
+    padding-left: 1em;
+  }
 }
 
 /* Responsive - when the screen is less than 800px wide*/
@@ -805,8 +809,6 @@ p.bold {
     align-items: center;
     justify-content: center;
     flex-wrap: nowrap;
-    padding-top: 0;
-    padding-bottom: 0;
     margin-top: 10px;
   }
 }
